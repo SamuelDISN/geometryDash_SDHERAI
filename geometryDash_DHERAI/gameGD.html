@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>GEOMETRY DASH</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="flavicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="flavicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+
+
+<body >
+    <canvas id="geometryDashCanvas" width="500" height="500" ></canvas>
+
+    <div class="isBackgroundLinearFloor"></div>
+
+    <div id="isContainer2dGD">
+        <div class="isSpeedLine topGd1"></div>
+        <div class="isSpeedLine midGd2"></div>
+        <div class="isSpeedLine bottomGd3"></div>
+        <div id="isCubeFaceGd2D">
+            <div class="isContainerEyes2D">
+                <div class="isEyes2D"></div>
+                <div class="isEyes2D"></div>
+            </div>
+        <div class="isContainerMouse2D">
+            <div class="isTriangleTooth2d "></div>
+            <div class="isTriangleTooth2d "></div>
+            <div class="isTriangleTooth2d "></div>
+        </div>
+    </div>
+    </div>
+
+    <div id="isContainerAnimationCube">
+        <div class="isContainerCubeAnimationL">
+            <div class="cubeL animationRotating">
+                <div class="cubeFace frontL">
+
+                    <div id="isContainerFaceGD">
+                        <div class="isEyes L"></div>
+                        <div class="isEyes R"></div>
+                        <div class="isContainerMouse">
+                            <div class="isContainerTriangleTooth">
+                                <div class="isTriangleTooth "></div>
+                                <div class="isTriangleTooth "></div>
+                                <div class="isTriangleTooth "></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cubeFace backL"></div>
+                <div class="cubeFace leftL"></div>
+                <div class="cubeFace rightL"></div>
+                <div class="cubeFace topL"></div>
+                <div class="cubeFace bottomL"></div>
+            </div>
+        </div>
+
+        <div class="isContainerCubeAnimationR">
+            <div class="cubeR animationRotating">
+                <div class="cubeFace frontR">
+                    <div id="isContainerFaceGD">
+                        <div class="isEyes L"></div>
+                        <div class="isEyes R"></div>
+                        <div class="isContainerMouse">
+                            <div class="isContainerTriangleTooth">
+                                <div class="isTriangleTooth"></div>
+                                <div class="isTriangleTooth"></div>
+                                <div class="isTriangleTooth"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cubeFace backR"></div>
+                <div class="cubeFace leftR"></div>
+                <div class="cubeFace rightR"></div>
+                <div class="cubeFace topR"></div>
+                <div class="cubeFace bottomR"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="isContainerStartGame">
+        <div class="isContainerArrowAnimationL"></div>
+        <div class="isContainerArrowAnimationR"></div>
+        <input onclick="PlayGame()" id="isInputStart" type="button" value="START GEOMETRY DASH!" class="isArrowContainerTransition" >
+    </div>
+
+    <div class="isContainerChangeColor">
+        <p id="isTextChangeColor"><a>Change Color</a></p>
+    </div>
+
+
+    <div class="isScoreContainer">
+        <div class="isScoreMsg">
+            <p>
+                <a>SCORE :</a>
+                <a id="isScoreValue">0</a>
+            </p>
+        </div>
+    </div>
+
+    <h1 id="isTextInfArrow" >Press up-arrow to JUMP</h1>
+
+    <div class="isContainerTextLoosing">
+        <div id="isTextLoosing">
+            <p>LOOSE !</p>
+            <input id="isInputStartAgain" onclick="Playgame()" type="button" value="PRESS F5 TO START AGAIN !"  >
+        </div>
+    </div>
+    
+    
+    <div class="isContainerObstacle">
+        <div id="isRectObstacleSmall"></div>
+        <div id="isRectObstacleMedium"></div>
+    </div>
+
+</body>
+
+    <script src="geometryDash.js"></script> 
+
+</html>
